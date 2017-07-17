@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html>
-<title> US Names </title>
+<head> 
+  <title> US Names </title>
+  <script src="jquery.js"></script> 
+  <script> 
+    $(function(){
+      $("#graphContent").load("graph.html"); 
+    });
+    </script> 
+</head> 
 <body>
 
 <h1>My First Heading</h1>
   
   <p> Graph Start </p>
-  {{include graph.html}}
+  <div id="graphContent"></div>
   <p> Graph End </p>
 
 <p>My first paragraph.</p>
